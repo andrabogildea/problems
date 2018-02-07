@@ -2,8 +2,8 @@
 
 To set up the environment:
 ```
-python3 -m venv /tmp/movie_api/
-source /tmp/movie_api/bin/activate
+python3 -m venv /tmp/ve/
+source /tmp/ve/bin/activate
 pip install pytest
 pip install Django
 ```
