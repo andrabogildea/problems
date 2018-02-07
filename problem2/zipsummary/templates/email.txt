@@ -1,0 +1,8 @@
+Summary for {{ name }}:
+{% if files %}
+Here are the files that matched the filter ({{ pattern | default:"N\A"}}):
+{% for f in files %} * {{ f }}
+{% endfor %}
+{% else %}
+No files matched the filter ({{ pattern | default:"N\A"}}).
+{% endif %}

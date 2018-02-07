@@ -1,0 +1,19 @@
+<html>
+	<body>
+ 
+		{% if messages %}
+			<ul>
+			{% for message in messages %}
+				<li>{{ message }}</li>
+			{% endfor %}
+			</ul>
+		{% endif %}
+
+		<h1>Send Summary</h1>
+		<form enctype="multipart/form-data" action="{% url 'zipform' %}" method="post">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<input type="submit" value="Send summary">
+		</form>
+	</body>
+</html>

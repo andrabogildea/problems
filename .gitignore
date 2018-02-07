@@ -1,0 +1,4 @@
+ve
+*.pyc
+__pycache__
+.eggs
